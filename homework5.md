@@ -197,7 +197,7 @@ sleep     1308      student    2u      CHR              136,0       0t0         
 ```
 ### 3. List all ESTABLISHED TCP connections ONLY with lsof
 ```
-sudo lsof -iTCP sTCP:ESTABLISHED
+sudo lsof -iTCP -sTCP:ESTABLISHED
 
 [student@localhost ~]$ sudo lsof -i TCP | grep ESTABLISHED
 sshd    1147    root    3u  IPv4  18454      0t0  TCP localhost.localdomain:ssh->192.168.56.1:50164 (ESTABLISHED)
