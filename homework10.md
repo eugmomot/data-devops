@@ -2,7 +2,10 @@
 
 ##### 1. enable recovery options for grub, update main configuration file and find new item in grub2 config in /boot.
 ```
-sudo vi /etc/default/grub
+sudo vi /etc/default/gru
+...
+#GRUB_DISABLE_RECOVERY="true"
+...
 sudo grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
